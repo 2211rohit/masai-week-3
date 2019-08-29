@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sudoku Game
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div>
+            <h1 class="banner">
+                Play SUDOKU
+            </h1>
+            
+            <p class="text">
+                "The game of brain and concentration"
+            </p>
+
+            <div class="playground">
+                <button class="box1 row1 col1" id="1" onclick="display('1')"></button>
+                <button class="box1 row1 col2">3</button>
+                <button class="border-right box1 row1 col3" id="3" onclick="display('3')"></button>
+                <button class="box2 row1 col4" id="4" onclick="display('4')"></button>
+                <button class="box2 row1 col5">2</button>
+                <button class="border-right box2 row1 col6">7</button>
+                <button class="box3 row1 col7">8</button>
+                <button class="box3 row1 col8" id="8" onclick="display('8')"></button>
+                <button class="box3 row1 col9" id="9" onclick="display('9')"></button>
+                <button class="box1 row2 col1">6</button>
+                <button class="box1 row2 col2" id="11" onclick="display('11')"></button>
+                <button class="border-right box1 row2 col3">9</button>
+                <button class="box2 row2 col4" id="13" onclick="display('13')"></button>
+                <button class="box2 row2 col5" id="14" onclick="display('14')"></button>
+                <button class="border-right box2 row2 col6">3</button>
+                <button class="box3 row2 col7" id="16" onclick="display('16')"></button>
+                <button class="box3 row2 col8" id="17" onclick="display('17')"></button>
+                <button class="box3 row2 col9">7</button>
+                <button class="border-bottom box1 row3 col1" id="19" onclick="display('19')"></button>
+                <button class="border-bottom box1 row3 col2">2</button>
+                <button class="border-rightbottom box1 row3 col3">7</button>
+                <button class="border-bottom box2 row3 col4" id="22" onclick="display('22')"></button>
+                <button class="border-bottom box2 row3 col5">9</button>
+                <button class="border-rightbottom box2 row3 col6">4</button>
+                <button class="border-bottom box3 row3 col7" id="25" onclick="display('25')"></button>
+                <button class="border-bottom box3 row3 col8">6</button>
+                <button class="border-bottom box3 row3 col9" id="27" onclick="display('27')"></button>
+                <button class="box4 row4 col1" id="28" onclick="display('28')"></button>
+                <button class="box4 row4 col2">6</button>
+                <button class="border-right box4 row4 col3" id="30" onclick="display('30')"></button>
+                <button class="box5 row4 col4" id="31" onclick="display('31')"></button>
+                <button class="box5 row4 col5" id="32" onclick="display('32')"></button>
+                <button class="border-right box5 row4 col6" id="33" onclick="display('33')"></button>
+                <button class="box6 row4 col7" id="34" onclick="display('34')"></button>
+                <button class="box6 row4 col8" id="35" onclick="display('35')"></button>
+                <button class="box6 row4 col9" id="36" onclick="display('36')"></button>
+                <button class="box4 row5 col1" id="37">1</button>
+                <button class="box4 row5 col2" id="38" onclick="display('38')"></button>
+                <button class="border-right box4 row5 col3" id="39" onclick="display('39')"></button>
+                <button class="box5 row5 col4">7</button>
+                <button class="box5 row5 col5" id="41" onclick="display('41')"></button>
+                <button class="border-right box5 row5 col6" id="42" onclick="display('42')"></button>
+                <button class="box6 row5 col7" id="43" onclick="display('43')"></button>
+                <button class="box6 row5 col8">4</button>
+                <button class="box6 row5 col9" id="45" onclick="display('45')"></button>
+                <button class="border-bottom box4 row6 col1">3</button>
+                <button class="border-bottom box4 row6 col2">7</button>
+                <button class="border-rightbottom box4 row6 col3" id="48" onclick="display('48')"></button>
+                <button class="border-bottom box5 row6 col4" id="49" onclick="display('49')"></button>
+                <button class="border-bottom box5 row6 col5" >8</button>
+                <button class="border-rightbottom box5 row6 col6" >2</button>
+                <button class="border-bottom box6 row6 col7" id="52" onclick="display('52')"></button>
+                <button class="border-bottom box6 row6 col8" id="53" onclick="display('53')"></button>
+                <button class="border-bottom box6 row6 col9" id="54" onclick="display('54')"></button>
+                <button class="box7 row7 col1">4</button>
+                <button class="box7 row7 col2">9</button>
+                <button class="border-right box7 row7 col3" id="57" onclick="display('57')"></button>
+                <button class="box8 row7 col4">1</button>
+                <button class="box8 row7 col5">7</button>
+                <button class="border-right box8 row7 col6">5</button>
+                <button class="box9 row7 col7">3</button>
+                <button class="box9 row7 col8" id="62" onclick="display('62')"></button>
+                <button class="box9 row7 col9">2</button>
+                <button class="box7 row8 col1">2</button>
+                <button class="box7 row8 col2" id="65" onclick="display('65')"></button>
+                <button class="border-right box7 row8 col3">8</button>
+                <button class="box8 row8 col4" id="67" onclick="display('67')"></button>
+                <button class="box8 row8 col5" id="68" onclick="display('68')"></button>
+                <button class="border-right box8 row8 col6" id="69" onclick="display('69')"></button>
+                <button class="box9 row8 col7" id="70" onclick="display('70')"></button>
+                <button class="box9 row8 col8">7</button>
+                <button class="box9 row8 col9">5</button>
+                <button class="box7 row9 col1" id="73" onclick="display('73')"></button>
+                <button class="box7 row9 col2">5</button>
+                <button class="border-right box7 row9 col3">3</button>
+                <button class="box8 row9 col4">2</button>
+                <button class="box8 row9 col5">4</button>
+                <button class="border-right box8 row9 col6">8</button>
+                <button class="box9 row9 col7" id="79" onclick="display('79')"></button>
+                <button class="box9 row9 col8" id="80" onclick="display('80')"></button>
+                <button class="box9 row9 col9">6</button>
+            </div>
+    
+            <div class="keyboard">
+                <button onclick="input('1')">1</button>
+                <button onclick="input('2')">2</button>
+                <button onclick="input('3')">3</button>
+                <button onclick="input('4')">4</button>
+                <button onclick="input('5')">5</button>
+                <button onclick="input('6')">6</button>
+                <button onclick="input('7')">7</button>
+                <button onclick="input('8')">8</button>
+                <button onclick="input('9')">9</button>
+                <span></span>
+                <button onclick="input('')">X</button>
+            </div>
+
+        </div>             
+    </body>
+</html>
